@@ -1,0 +1,27 @@
+{
+  "name": "sonarqube-sample-app",
+  "version": "1.0.0",
+  "description": "Sample application to test SonarQube code quality, security analysis, and Quality Gates via GitHub Actions",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "test": "node --test",
+    "test:coverage": "c8 --reporter=lcov --reporter=text node --test"
+  },
+  "keywords": [
+    "sonarqube",
+    "sonarcloud",
+    "code-quality",
+    "sast",
+    "quality-gate",
+    "github-actions"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "c8": "^10.1.3"
+  }
+}
